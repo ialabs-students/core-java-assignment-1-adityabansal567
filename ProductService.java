@@ -1,18 +1,18 @@
 package com.assignment;
 
 
-	import java.util.ArrayList;
+import java.util.ArrayList;
 
 	public class ProductService {
 
-		public static String findNameByCode(int num) {
-			for (int i = 0; i < Productrepo.abc.length; i++) {
-				if (Productrepo.abc[i].getProductCode() == num) {
-					return Productrepo.abc[i].getName();
-				}
+	public static String findNameByCode(int num) {
+		for (int i = 0; i < Productrepo.abc.length; i++) {
+			if (Productrepo.abc[i].getProductCode() == num) {
+				return Productrepo.abc[i].getName();
+			}
 			}
 			return "null";
-		}
+	}
 
 		public static Product findMaxPriceProduct(String category) {
 			double maxPrice = Double.MIN_VALUE;
